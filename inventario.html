@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Inventario - Admin</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header><h1>Admin — Inventario</h1></header>
+
+  <button id="menuBtn">☰ Menu</button>
+  <div id="sidebar" aria-hidden="true"></div>
+  <div id="menuOverlay"></div>
+
+  <main class="container">
+    <h2>Inventario</h2>
+    <table class="table" id="invTable">
+      <thead><tr><th>Producto</th><th>Categoría</th><th>Precio</th><th>Cantidad</th></tr></thead>
+      <tbody></tbody>
+    </table>
+
+    <div style="margin-top:12px; display:flex; gap:8px;">
+      <button id="saveInv" class="btn-primary">Guardar cambios</button>
+      <button id="resetInv" class="btn-cancel">Restablecer valores a 35</button>
+    </div>
+  </main>
+
+  <footer>2025 PaPistear Bar. Todos los derechos reservados.</footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
