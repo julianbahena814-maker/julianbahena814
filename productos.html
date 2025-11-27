@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Productos - PaPistear</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header><div style="display: flex; align-items: center; gap: 10px;">
+    <img src="img/logo.jpeg" alt="Logo Papistear" style="height: 40px;">
+    <h1 style="margin: 0;">Productos</h1>
+</div>
+</header>
+
+  <button id="menuBtn">☰ Menu</button>
+  <div id="sidebar" aria-hidden="true"></div>
+  <div id="menuOverlay"></div>
+
+  <main class="container">
+    <h2>Cocteles Clásicos</h2>
+    <div class="product-grid" id="coctelesGrid"></div>
+
+    <h2>Cervezas</h2>
+    <div class="product-grid" id="cervezasGrid"></div>
+
+    <h2>Botanas y Snacks</h2>
+    <div class="product-grid" id="snacksGrid"></div>
+  </main>
+
+  <!-- MODAL DE COMPRA -->
+  <div class="modal-bg" id="compraModal">
+    <div class="modal">
+      <h3 id="modalProducto"></h3>
+      <label>Nombre del cliente</label>
+      <input id="clienteNombre" type="text" placeholder="Ej. Juan Pérez">
+      <label>Método de pago</label>
+      <select id="metodoPago"><option value="efectivo">Efectivo</option><option value="tarjeta">Tarjeta</option></select>
+      <label>Cantidad</label>
+      <input id="cantidadCompra" type="number" min="1" value="1">
+      <p class="small">Total: $<span id="totalCompra">0</span></p>
+      <div class="row">
+        <button id="confirmarCompra" class="btn-primary">Confirmar</button>
+        <button id="cancelarCompra" class="btn-cancel">Cancelar</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="social-panel" id="socialPanel">
+    <a href="https://www.facebook.com/share/14PPwXvr3vL/" target="_blank"><img src="img/facebook.png" alt="fb"></a>
+    <a href="https://www.instagram.com/papistear_ofi?igsh=anlzajUzcGk5eW3" target="_blank"><img src="img/instagram.avif" alt="ig"></a>
+  </div>
+
+  <footer>2025 PaPistear Bar. Todos los derechos reservados.</footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
+
+
+
