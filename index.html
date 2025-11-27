@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Login - PaPistear</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header><div style="display: flex; align-items: center; gap: 10px;">
+    <img src="img/logo.jpeg" alt="Logo Papistear" style="height: 40px;">
+    <h1 style="margin: 0;">Papistear</h1>
+</div>
+</header>
+
+  <button id="menuBtn">☰ Menu</button>
+  <div id="sidebar" aria-hidden="true"></div>
+  <div id="menuOverlay"></div>
+
+  <main class="container">
+    <div class="login-box" style="max-width:420px;margin:40px auto;background:linear-gradient(180deg,var(--card),var(--card-dark));padding:20px;border-radius:12px;">
+      <h2 style="color:var(--accent);margin:0 0 10px;">Acceso administrador</h2>
+
+      <label class="small">Contraseña:</label>
+      <input id="password" type="password" placeholder="Contraseña" style="width:100%;padding:10px;border-radius:6px;border:none;background:rgba(255,255,255,0.03);color:#fff;">
+
+      <div style="display:flex;gap:10px;margin-top:12px;">
+        <button id="adminBtn" class="btn-primary" style="flex:1;">Entrar como Admin</button>
+        <button id="guestBtn" class="btn-cancel" style="flex:1;">Entrar como Cliente</button>
+      </div>
+      
+    </div>
+  </main>
+
+  <div class="social-panel" id="socialPanel">
+    <a href="https://www.facebook.com/share/14PPwXvr3vL/" target="_blank"><img src="img/facebook.png" alt="fb"></a>
+    <a href="https://www.instagram.com/papistear_ofi?igsh=anlzajUzcGk5eW3" target="_blank"><img src="img/instagram.avif" alt="ig"></a>
+  </div>
+
+  <footer>2025 PaPistear Bar. Todos los derechos reservados.</footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
+
+
