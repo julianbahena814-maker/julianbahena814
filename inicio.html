@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Inicio - PaPistear</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header><div style="display: flex; align-items: center; gap: 10px;">
+    <img src="img/logo.jpeg" alt="Logo Papistear" style="height: 40px;">
+    <h1 style="margin: 0;">Papistear</h1>
+</div>
+</header>
+
+  <!-- Menú botón y sidebar (igual en todas las páginas) -->
+  <button id="menuBtn">☰ Menu</button>
+  <div id="sidebar" aria-hidden="true"></div>
+  <div id="menuOverlay"></div>
+
+  <main class="container">
+    <div class="welcome-box">
+      <h2>Tu lugar ideal para comprar y disfrutar las mejores bebidas para tu fiesta.</h2>
+      <p>PaPistear es una plataforma donde puedes adquirir bebidas, cocteles y productos relacionados con el ambiente del bar de forma fácil, rápida y segura. Todo está pensado para que compres lo que necesitas desde la comodidad de tu casa y sin complicaciones.</p>
+      <p>Aquí podrás encontrar una variedad de opciones para cualquier ocasión, ya sea una reunión, una fiesta o simplemente para disfrutar un buen momento. Navega, elige y compra en solo unos clics.</p>
+      <p style="font-weight:700;color:var(--accent)">Si tu vida quieres alegrar… ¡compra con nosotros en PaPistear! 🍻🔥</p>
+    </div>
+
+    <h2>Promociones</h2>
+    <div class="carousel" id="carouselPromos">
+      <div class="carousel-track" id="trackPromos">
+        <div class="slide"><img src="img/promocion1.png" alt="Promo1" data-link="productos.html"></div>
+        <div class="slide"><img src="img/promocion2.png" alt="Promo2" data-link="productos.html"></div>
+        <div class="slide"><img src="img/promocion3.png" alt="Promo3" data-link="productos.html"></div>
+      </div>
+    </div>
+
+    <h2>Sugerencias</h2>
+    <div class="carousel" id="carouselSug">
+      <div class="carousel-track" id="trackSug">
+        <div class="slide"><img src="img/Mojito.jpg" alt="Mojito" data-link="productos.html"></div>
+        <div class="slide"><img src="img/Corona.jpg" alt="Corona" data-link="productos.html"></div>
+        <div class="slide"><img src="img/Nachos.jpg" alt="Nachos" data-link="productos.html"></div>
+      </div>
+    </div>
+  </main>
+
+  <div class="social-panel" id="socialPanel">
+    <a href="https://www.facebook.com/share/14PPwXvr3vL/" target="_blank"><img src="img/facebook.png" alt="fb"></a>
+    <a href="https://www.instagram.com/papistear_ofi?igsh=anlzajUzcGk5eW3" target="_blank"><img src="img/instagram.avif" alt="ig"></a>
+  </div>
+
+  <footer>2025 PaPistear Bar. Todos los derechos reservados.</footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
+
+
